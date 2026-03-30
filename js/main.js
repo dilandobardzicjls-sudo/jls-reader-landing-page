@@ -58,6 +58,9 @@
         closeLightbox();
       }
     });
+	lightboxImg.addEventListener('click', function () {
+	  closeLightbox();
+	});
 
     // Escape key closes it
     document.addEventListener('keydown', function (e) {
