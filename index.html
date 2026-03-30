@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JLS Reader — Training that feels like reading, not homework</title>
+  <meta name="description" content="JLS Reader transforms your PLMS Google Sheet into a distraction-free learning experience. Zero cost, zero migration, 100% reversible.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JLS Reader — Training that feels like reading, not homework">
+  <meta property="og:description" content="A distraction-free reading experience for JLS training. Built on your existing Google Sheet.">
+  <meta property="og:image" content="assets/og-preview.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Film-grain texture overlay — Editorial Luxury vibe -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ========== SECTION 1: HERO ========== -->
+    <section class="hero" aria-label="Hero">
+      <div class="container hero__inner">
+
+        <div class="hero__badge-row reveal" data-delay="0">
+          <div class="badge">
+            <span class="badge__dot" aria-hidden="true"></span>
+            Built &amp; Ready to Test
+          </div>
+        </div>
+
+        <h1 class="hero__headline reveal" data-delay="100">Training that feels like reading,<br>not homework</h1>
+
+        <p class="hero__sub reveal" data-delay="200">JLS Reader turns your team's PLMS Google Sheet into a focused, beautiful learning experience — with progress tracking, study tools, and zero migration.</p>
+
+        <div class="hero__ctas reveal" data-delay="300">
+          <a href="https://jls-reader.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--pill">
+            <span>Try JLS Reader</span>
+            <span class="btn__icon-wrap" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+            </span>
+          </a>
+          <a href="#solution" class="link--subtle">See How It Works <span aria-hidden="true">&darr;</span></a>
+        </div>
+
+        <!-- Hero Mockup — Double-Bezel (Doppelrand) architecture -->
+        <div class="hero__mockup reveal" data-delay="400">
+          <div class="doppelrand">
+            <div class="doppelrand__core">
+              <img src="assets/mockups/1 JLS Reader dashboard.png"
+                   alt="JLS Reader dashboard showing a greeting, course cards with progress bars, and a clean interface"
+                   class="hero__img"
+                   width="1200" height="750">
+            </div>
+          </div>
+        </div>
+
+        <!-- Proof Strip -->
+        <div class="proof-strip reveal" data-delay="500">
+          <div class="proof-stat">
+            <span class="proof-stat__value">$0/mo</span>
+            <span class="proof-stat__label">core cost</span>
+            <span class="proof-stat__fine">Core product free. AI study tools ~$0.01–0.05/day per user.</span>
+          </div>
+          <div class="proof-strip__sep" aria-hidden="true"></div>
+          <div class="proof-stat">
+            <span class="proof-stat__value">Zero</span>
+            <span class="proof-stat__label">migration</span>
+            <span class="proof-stat__fine">Your Google Sheet stays exactly as it is.</span>
+          </div>
+          <div class="proof-strip__sep" aria-hidden="true"></div>
+          <div class="proof-stat">
+            <span class="proof-stat__value">100%</span>
+            <span class="proof-stat__label">reversible</span>
+            <span class="proof-stat__fine">Remove access anytime. No data changes.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== SECTION 2: PROBLEM (Animation Zone 1) ========== -->
+    <section class="animation-zone zone--warm" id="unclutter-zone" aria-label="The problem with current training">
+      <div class="animation-container">
+        <div class="canvas-frame">
+          <canvas id="unclutter-canvas" aria-hidden="true"></canvas>
+        </div>
+
+        <img class="fallback-image"
+             src="assets/fallbacks/unclutter-static.webp"
+             alt="Chaotic spreadsheet elements gradually resolving into a clean reading interface"
+             loading="lazy">
+
+        <div class="overlay-text" id="problem-text-1">
+          <p>Your training system holds the data. But the experience of using it?</p>
+        </div>
+        <div class="overlay-text" id="problem-text-2">
+          <p>Employees bounce between the Sheet, Google Docs, and external links — every switch breaks focus.</p>
+        </div>
+        <div class="overlay-text" id="problem-text-3">
+          <p>There's no "pick up where you left off." Just scrolling through rows, guessing which was next.</p>
+        </div>
+        <div class="overlay-text" id="problem-text-4">
+          <p>Without study tools or progress signals, training becomes a checklist. Comprehension suffers.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ========== SECTION 3: SOLUTION OVERVIEW ========== -->
+    <section class="section bg--cream" id="solution" aria-labelledby="solution-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">The Solution</span>
+          <h2 id="solution-heading">Same spreadsheet.<br>Completely different experience.</h2>
+          <p class="section-header__sub">JLS Reader sits on top of your existing PLMS Google Sheet. Nothing to migrate. Nothing to replace.</p>
+        </div>
+
+        <!-- Pillars — NOT a generic 3-card grid. Lead pillar is larger, asymmetric. -->
+        <div class="pillars">
+          <div class="pillar pillar--lead reveal">
+            <div class="doppelrand doppelrand--card">
+              <div class="doppelrand__core pillar__inner">
+                <div class="pillar__icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h3 class="pillar__title">Distraction-Free Reader</h3>
+                <p class="pillar__desc">Training content pulled from the Sheet into a clean, focused reading view. Themes, font controls, scroll memory.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pillar reveal">
+            <div class="doppelrand doppelrand--card">
+              <div class="doppelrand__core pillar__inner">
+                <div class="pillar__icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <h3 class="pillar__title">Smart Progress Tracking</h3>
+                <p class="pillar__desc">See what's done, what's next, and how far along each person is — automatically.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pillar reveal">
+            <div class="doppelrand doppelrand--card">
+              <div class="doppelrand__core pillar__inner">
+                <div class="pillar__icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <h3 class="pillar__title">AI Study Tools</h3>
+                <p class="pillar__desc">Claude-powered tools that help employees actually retain what they read.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========== SECTION 4: FEATURE DEEP DIVES ========== -->
+    <section class="section bg--cream-alt" aria-label="Features">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">Features</span>
+          <h2>Everything your training needs,<br>nothing it doesn't.</h2>
+        </div>
+
+        <!-- Feature A: The Reader -->
+        <div class="feature reveal">
+          <div class="feature__media">
+            <div class="doppelrand">
+              <div class="doppelrand__core">
+                <img src="assets/mockups/2 JLS Reader reading experience.png"
+                     alt="JLS Reader reading view with theme selection, adjustable font controls, and a progress bar"
+                     class="feature__img"
+                     loading="lazy" width="1200" height="750">
+              </div>
+            </div>
+          </div>
+          <div class="feature__text">
+            <h3>A reading experience, not a spreadsheet</h3>
+            <ul class="feature__list">
+              <li>Choose from multiple reading themes — light, sepia, dark, or high contrast</li>
+              <li>Adjust font size and content width to your preference</li>
+              <li>Scroll position memory — picks up right where you left off</li>
+              <li>Progress bar shows your position in the document</li>
+              <li>Toggle images on or off for text-heavy content</li>
+              <li>Navigate between items with tabbed navigation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature B: Multi-Content Support -->
+        <div class="feature feature--flipped reveal">
+          <div class="feature__media">
+            <div class="doppelrand">
+              <div class="doppelrand__core">
+                <img src="assets/mockups/3 Videos, forms, links, docs.png"
+                     alt="Stacked content type cards showing inline video, Google Form, and external link items"
+                     class="feature__img"
+                     loading="lazy" width="1200" height="750">
+              </div>
+            </div>
+          </div>
+          <div class="feature__text">
+            <h3>Videos, forms, links, docs — all in one place</h3>
+            <ul class="feature__list">
+              <li>YouTube, Loom, and Google Drive videos play inline — no new tabs</li>
+              <li>Google Forms appear as interactive cards</li>
+              <li>Vimeo and external links open gracefully</li>
+              <li>Full document formatting preserved</li>
+              <li>Everything your Sheet references, organized in one view</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature C: Progress Tracking -->
+        <div class="feature reveal">
+          <div class="feature__media">
+            <div class="doppelrand">
+              <div class="doppelrand__core">
+                <img src="assets/mockups/4 Always know where you are.png"
+                     alt="Training item list showing completed items, a highlighted next item, and upcoming items"
+                     class="feature__img"
+                     loading="lazy" width="1200" height="750">
+              </div>
+            </div>
+          </div>
+          <div class="feature__text">
+            <h3>Always know where you are</h3>
+            <ul class="feature__list">
+              <li>Dashboard shows completion percentage per course and section</li>
+              <li>"Continue Learning" jumps to your frontier item — the first incomplete</li>
+              <li>Content type badges so you know what's ahead (doc, video, form, link)</li>
+              <li>One-click mark-as-done with instant undo</li>
+              <li>Progress verified against the Sheet before writing — your data stays accurate</li>
+              <li>Changed your mind? Un-mark any item, anytime</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature D: AI Study Tools -->
+        <div class="feature feature--flipped reveal">
+          <div class="feature__media">
+            <div class="doppelrand">
+              <div class="doppelrand__core">
+                <img src="assets/mockups/5 Study tools.png"
+                     alt="AI study tools panel with SQ4R, paraphrase, and summarize options and sample output"
+                     class="feature__img"
+                     loading="lazy" width="1200" height="750">
+              </div>
+            </div>
+          </div>
+          <div class="feature__text">
+            <h3>Study tools that make training stick</h3>
+            <ul class="feature__list">
+              <li>SQ4R method: generates survey questions, reading prompts, and review material</li>
+              <li>Paraphrase: rewrites content in simpler, clearer terms</li>
+              <li>Summarize: distills the key takeaways into a few sentences</li>
+              <li>Responses are cached — the same content doesn't cost twice</li>
+              <li>Regenerate for a fresh perspective</li>
+              <li>Daily usage limit keeps costs predictable</li>
+              <li>API keys secured server-side — never exposed in the browser</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========== SECTION 5: HOW IT WORKS ========== -->
+    <section class="section bg--cream" aria-labelledby="how-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">How It Works</span>
+          <h2 id="how-heading">Four steps. No setup.</h2>
+          <p class="section-header__sub">No IT department, no migration, no configuration.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Sign in with Google</h3>
+            <p>Use your existing JLS Google account.</p>
+          </div>
+          <div class="step__connector" aria-hidden="true"></div>
+          <div class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Sheet auto-detected</h3>
+            <p>JLS Reader finds your team's PLMS sheet automatically.</p>
+          </div>
+          <div class="step__connector" aria-hidden="true"></div>
+          <div class="step reveal">
+            <span class="step__num">3</span>
+            <h3>See your dashboard</h3>
+            <p>Your training items, progress, and next steps — organized.</p>
+          </div>
+          <div class="step__connector" aria-hidden="true"></div>
+          <div class="step reveal">
+            <span class="step__num">4</span>
+            <h3>Read &amp; learn</h3>
+            <p>Open any item and start learning in a distraction-free reader.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== SECTION 6: PRODUCT SHOWCASE (Animation Zone 2) ========== -->
+    <section class="animation-zone zone--warm" id="product-zone" aria-label="Product showcase">
+      <div class="animation-container">
+        <div class="canvas-frame">
+          <canvas id="product-canvas" aria-hidden="true"></canvas>
+        </div>
+
+        <img class="fallback-image"
+             src="assets/fallbacks/product-static.webp"
+             alt="JLS Reader app displayed on a rotating device"
+             loading="lazy">
+
+        <div class="stat-overlay" id="stat-1">Zero backend servers</div>
+        <div class="stat-overlay" id="stat-2">Google Sheet stays the single source of truth</div>
+        <div class="stat-overlay" id="stat-3">Every service runs on free tiers</div>
+        <div class="stat-overlay" id="stat-4">Built with React, Firebase, and Claude AI</div>
+      </div>
+    </section>
+
+
+
+    <!-- ========== SECTION 7: BACKWARD COMPATIBILITY ========== -->
+    <section class="section bg--cream" aria-labelledby="compat-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">Resilience</span>
+          <h2 id="compat-heading">Built to survive change.</h2>
+        </div>
+
+        <div class="resilience">
+          <div class="resilience__card reveal">
+            <div class="doppelrand doppelrand--card">
+              <div class="doppelrand__core resilience__inner">
+                <div class="resilience__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Column matching by header name</h3>
+                <p>JLS Reader finds data by column header names — not positions. Rearrange or add columns, and the app still works.</p>
+                <span class="resilience__tag">The sheet can evolve without breaking anything.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resilience__card reveal">
+            <div class="doppelrand doppelrand--card">
+              <div class="doppelrand__core resilience__inner">
+                <div class="resilience__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <h3>Composite key row matching</h3>
+                <p>Training items are identified by section name + item name — not row number. Reorder, add, or remove rows freely.</p>
+                <span class="resilience__tag">Employee progress stays accurate even when the sheet is reorganized.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resilience__card reveal">
+            <div class="doppelrand doppelrand--card">
+              <div class="doppelrand__core resilience__inner">
+                <div class="resilience__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <h3>Verify-before-write</h3>
+                <p>Before recording progress, JLS Reader checks that the target cell hasn't changed. If something's off, it pauses and flags the discrepancy.</p>
+                <span class="resilience__tag">The app will never silently overwrite your data.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="callout reveal">
+          <p>The Google Sheet is your system of record.<br>JLS Reader is designed to never, ever corrupt it.</p>
+        </blockquote>
+
+      </div>
+    </section>
+
+
+    <!-- ========== SECTION 8: COST & ZERO RISK ========== -->
+    <section class="section bg--cream-alt" aria-labelledby="cost-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2 id="cost-heading">What it costs: nothing.</h2>
+          <p class="section-header__sub">Every service runs on a free tier — except AI study tools, which cost pennies.</p>
+        </div>
+
+        <!-- Cost Table in a Doppelrand shell -->
+        <div class="reveal">
+          <div class="doppelrand doppelrand--wide">
+            <div class="doppelrand__core">
+              <table class="cost-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Service</th>
+                    <th scope="col">Purpose</th>
+                    <th scope="col">Monthly Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Netlify</td>
+                    <td>App hosting &amp; CDN</td>
+                    <td><span class="cost-zero">$0</span></td>
+                  </tr>
+                  <tr>
+                    <td>Firebase Auth</td>
+                    <td>Google sign-in</td>
+                    <td><span class="cost-zero">$0</span></td>
+                  </tr>
+                  <tr>
+                    <td>Firestore</td>
+                    <td>User data &amp; progress</td>
+                    <td><span class="cost-zero">$0</span></td>
+                  </tr>
+                  <tr>
+                    <td>Google Sheets API</td>
+                    <td>Sheet reading &amp; writing</td>
+                    <td><span class="cost-zero">$0</span></td>
+                  </tr>
+                  <tr>
+                    <td>Google Fonts</td>
+                    <td>Typography</td>
+                    <td><span class="cost-zero">$0</span></td>
+                  </tr>
+                  <tr class="cost-table__accent">
+                    <td>Claude AI</td>
+                    <td>Study tools (SQ4R, summarize, paraphrase)</td>
+                    <td>~$0.01–0.05/day per active user</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <p class="cost-total reveal">Total: <strong>$0/month</strong> for the core product. AI features add pennies per user per day.</p>
+
+        <!-- Risk Reversal — NOT a generic card grid. Lead card spans full. -->
+        <div class="section-header section-header--sm reveal">
+          <span class="eyebrow">Zero Risk</span>
+          <h2>Every decision is reversible.</h2>
+        </div>
+
+        <div class="risk-grid">
+          <div class="risk-card reveal">
+            <div class="risk-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+            </div>
+            <div>
+              <h3>100% Reversible</h3>
+              <p>Remove access anytime. The Sheet stays exactly as it was.</p>
+            </div>
+          </div>
+
+          <div class="risk-card reveal">
+            <div class="risk-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div>
+              <h3>Sheet stays source of truth</h3>
+              <p>JLS Reader reads from the Sheet. Your data never leaves Google.</p>
+            </div>
+          </div>
+
+          <div class="risk-card reveal">
+            <div class="risk-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div>
+              <h3>Test it now</h3>
+              <p>The app is built and running. No waiting, no vaporware.</p>
+            </div>
+          </div>
+
+          <div class="risk-card reveal">
+            <div class="risk-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <h3>Cost-capped</h3>
+              <p>AI costs are metered and limited. No surprise bills, ever.</p>
+            </div>
+          </div>
+
+          <div class="risk-card reveal">
+            <div class="risk-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 14 4 9 9 4"/><path d="M20 20v-7a4 4 0 0 0-4-4H4"/></svg>
+            </div>
+            <div>
+              <h3>Every action undoable</h3>
+              <p>Marked something as done by accident? Un-mark it. Nothing's permanent.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========== SECTION 9: ACCESSIBILITY STRIP ========== -->
+    <section class="a11y-section bg--cream" aria-label="Accessibility features">
+      <div class="container">
+        <div class="a11y-strip">
+          <div class="a11y-chip"><span aria-hidden="true">&#9000;&#65039;</span> Keyboard navigation</div>
+          <div class="a11y-chip"><span aria-hidden="true">&#128065;&#65039;</span> Screen reader support</div>
+          <div class="a11y-chip"><span aria-hidden="true">&#127919;</span> Reduced motion</div>
+          <div class="a11y-chip"><span aria-hidden="true">&#128241;</span> Responsive</div>
+          <div class="a11y-chip"><span aria-hidden="true">&#9889;</span> Optimistic UI</div>
+          <div class="a11y-chip"><span aria-hidden="true">&#128260;</span> Lazy loading</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== SECTION 10: FINAL CTA ========== -->
+    <section class="section final-cta" aria-labelledby="cta-heading">
+      <div class="container final-cta__inner">
+
+        <span class="eyebrow reveal">Get Started</span>
+
+        <h2 id="cta-heading" class="reveal">The app is built. The Sheet doesn't change.<br>The cost is zero.</h2>
+        <p class="final-cta__sub reveal">See what your team's training experience could look like.</p>
+
+        <a href="https://jls-reader.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--pill btn--lg reveal">
+          <span>Try JLS Reader</span>
+          <span class="btn__icon-wrap" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+          </span>
+        </a>
+
+        <div class="cta-divider reveal" aria-hidden="true"></div>
+
+        <p class="final-cta__or reveal">Not a tester yet? Request access below.</p>
+
+        <form class="email-form reveal" id="access-form" aria-label="Request test access">
+          <div class="email-form__row">
+            <label for="email-input" class="sr-only">Email address</label>
+            <input
+              type="email"
+              class="email-form__input"
+              id="email-input"
+              name="email"
+              placeholder="your.name@company.com"
+              required
+              autocomplete="email">
+            <button type="submit" class="btn btn--olive btn--pill" id="form-submit">
+              <span>Request Test Access</span>
+            </button>
+          </div>
+          <p class="email-form__helper">You'll be added to the Google OAuth test user list. Currently 100 slots available.</p>
+          <div class="email-form__status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+
+        <div class="trust-pills reveal">
+          <span class="trust-pill">Your Google Sheet doesn't change</span>
+          <span class="trust-pill">Remove access anytime</span>
+          <span class="trust-pill">No credit card required — ever</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>JLS Reader — Built with React, Firebase, and Claude AI. Deployed on Netlify.</p>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Page Scripts -->
+  <script src="js/canvas-animation.js" defer></script>
+  <script src="js/scroll-triggers.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
